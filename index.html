@@ -9,6 +9,11 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-75291022-1', 'auto');
 ga('send', 'pageview');
+var loc = window.location.href+'';
+if (loc.indexOf('http://')==0){
+    window.location.href = loc.replace('http://','https://');
+}
+
 </script>
     <meta name="author" content="Shai Levin">
     <meta name="email" content="shai@science.capetown">
