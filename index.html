@@ -7,14 +7,9 @@
     <meta name="email" content="shai@science.capetown">
     <title>Shai Levin</title>
     <style>
-        @media (max-width: 500px) {
-    .profile-img {
-        float: none;
-        display: block;
-        margin: 0 auto 16px;
-    }
-}
+
         body {
+            background: linear-gradient(180deg, #1f1f3a 0%, #1a1a2e 120px);
             background-color: #1a1a2e;
             color: blanchedalmond;
             margin: 0;
@@ -55,6 +50,13 @@
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
         }
+                @media (max-width: 360px) {
+    .profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 16px;
+    }
+}
 
         .links {
             margin: 1em 0;
@@ -105,8 +107,7 @@
         <h2>About Me</h2>
         <p>
             Raised in South Africa, living in New Zealand. Just finished my PhD in Post Quantum Cryptography
-            at University of Auckland in 2022 under Steven Galbraith. I successfully defended my thesis in
-            December 2025, passing with no revisions required. I love Muay Thai, the national martial art of
+            at University of Auckland in 2022 under Steven Galbraith. I love Muay Thai, the national martial art of
             Thailand. I am undefeated with 9 wins, winning a New Zealand (NZMAF) super-cruiserweight (86kg)
             title in my last fight.
         </p>
@@ -120,7 +121,8 @@
 
         <h2>My PhD Thesis</h2>
         <p>
-            My PhD thesis, currently submitted for examination, is available here:
+            I successfully defended my thesis in
+            December 2025, passing with no revisions required. It is available here:
             <a href="thesis.pdf"><i>Constructing Secure Protocols from Proofs of Knowledge and Isogenies</i></a>.
         </p>
 
@@ -157,7 +159,7 @@
         </ul>
 
         <h2>Miscellaneous Projects</h2>
-        <ul class="pub-list">
+        <ul>
             <li><a href="generategraph.sage">Code for generating the supersingular isogeny graph</a>, since it is very hard to find an implementation that works in the "correct" way.</li>
             <li><a href="https://github.com/levanin/SIKE-Python/">A (now insecure) implementation of Supersingular Isogeny Key Exchange (SIKE) in Python.</a></li>
             <li><a href="expanderstalk.pdf">Slides</a> for a talk I've done on Expander Graphs in Cryptography.</li>
