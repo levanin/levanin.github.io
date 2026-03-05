@@ -7,6 +7,13 @@
     <meta name="email" content="shai@science.capetown">
     <title>Shai Levin</title>
     <style>
+        @media (max-width: 500px) {
+    .profile-img {
+        float: none;
+        display: block;
+        margin: 0 auto 16px;
+    }
+}
         body {
             background-color: #1a1a2e;
             color: blanchedalmond;
@@ -60,15 +67,32 @@
         .links span {
             margin: 0 0.3em;
         }
+        
+            .pub-list {
+        list-style: none;
+        padding: 0;
+    }
+    .pub-list li {
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid #7ec8c8;
+        padding: 14px 18px;
+        margin-bottom: 12px;
+        border-radius: 0 6px 6px 0;
+        transition: background 0.2s ease;
+    }
+    .pub-list li:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+    
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Shai Levin — Post Quantum Cryptography</h1>
+        <h1>Shai Levin — Cryptographic Protocols Research</h1>
 
         <img src="image.jpg" width="150" alt="Shai Levin" class="profile-img">
 
-        <p>This site serves as a repository for some of my projects. You can contact me via shai(at)science(dot)capetown.</p>
+        <p>This site serves as a repository for some of my projects. You can contact me via shai<wbr>(at)<wbr>science<wbr>(dot)<wbr>capetown.</p>
 
         <p class="links">
             <a href="https://orcid.org/0000-0003-4632-9488">My ORCID</a>
@@ -87,7 +111,7 @@
             title in my last fight.
         </p>
         <p>
-            I am primarily interested in constructing practical, provably secure authentication protocols;
+            I am primarily interested in constructing practical, provably secure authentication and privacy-preserving protocols;
             both in the post-quantum (isogeny and code-based) and classical (discrete-log-based) setting.
             My primary focus in my PhD thesis has been applying modern, succinct generic proof systems
             (zk-SNARKs) as a building block for efficient post-quantum protocols, such as verifiable random
@@ -101,7 +125,7 @@
         </p>
 
         <h2>Publications</h2>
-        <ul>
+        <ul class="pub-list">
             <li>
                 <a href="https://eprint.iacr.org/2026/364"><i>(Submitted to Crypto '26) SPRINT: New Isogeny Proofs of Knowledge and Isogeny-Based Signatures</i></a>
                 with Thomas Den Hollander, Marzio Mula, Robi Pedersen, Daniel Slamanig and Sebastian Spindler.
@@ -133,7 +157,7 @@
         </ul>
 
         <h2>Miscellaneous Projects</h2>
-        <ul>
+        <ul class="pub-list">
             <li><a href="generategraph.sage">Code for generating the supersingular isogeny graph</a>, since it is very hard to find an implementation that works in the "correct" way.</li>
             <li><a href="https://github.com/levanin/SIKE-Python/">A (now insecure) implementation of Supersingular Isogeny Key Exchange (SIKE) in Python.</a></li>
             <li><a href="expanderstalk.pdf">Slides</a> for a talk I've done on Expander Graphs in Cryptography.</li>
