@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script>
+<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -11,25 +11,54 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     <meta name="author" content="Shai Levin">
     <meta name="email" content="shai@science.capetown">
     <LINK REL="SHORTCUT ICON" HREF="logo.svg">
+
 </head>
-<body  style="font-family:Arial;color:blanchedalmond; margin-left: 60px;text-align: left" bgcolor="#5f9ea0">
+<body>
+    <div style="max-width: 780px; margin: 0 auto; padding: 20px;">
+<style>
+    body {
+        background-color: #1a1a2e;
+        color: blanchedalmond;
+    }
+    h1 {
+        color: blanchedalmond;
+    }
+    h2 {
+        color: #7ec8c8;
+        border-bottom: 2px solid #2a2a4a;
+        padding-bottom: 8px;
+    }
+</style>
+<style>
+    a {
+        color: #82c4c4;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 0.3s ease, color 0.3s ease;
+    }
+    a:hover {
+        color: #a8e6e6;
+        border-bottom: 1px solid #a8e6e6;
+    }
+</style>
 <title>Shai Levin</title>
 <h1>Shai Levin - Post Quantum Cryptography </h1>
-<img src="image.jpg" width=150>
+<img src="image.jpg" width=150 style="float: left; margin: 0 20px 10px 0; border-radius: 6px;">
 <p> This site serves as a repository for some of my projects. You can contact me via shai(at)science(dot)capetown.</p>
 <p><a href="https://orcid.org/0000-0003-4632-9488">My ORCID</a>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/in/shai-levin123">My LinkedIn</a>&nbsp;&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/levanin">My GitHub</a></p>
 
 <h2>About Me</h2>
-Raised in South Africa, living in New Zealand. Just finished my PhD in Post Quantum Cryptography at University of Auckland in 2022 under Steven Galbraith. I love Muay Thai, the national martial art of Thailand. I am undefeated with 9 wins, and currently hold a New Zealand (NZMAF) super-cruiserweight (86kg) title. 
-<h2>NEW: Looking for Work!</h2>
-I have submitted my PhD thesis as of April 30 2025 and I am looking for research positions in central/western Europe from mid-September 2025. My preference would be for an industry position, but I am open to postdoctoral roles as well. I am primarily interested in constructing practical, provably secure protocols; both in the post-quantum (isogeny and code-based) and classical (discrete-log-based) setting. My primary focus in my PhD thesis has been applying modern, succinct generic proof systems (zk-SNARKs) as a building block for efficient post-quantum protocols, such as verifiable random functions, signature schemes and more.
+Raised in South Africa, living in New Zealand. Just finished my PhD in Post Quantum Cryptography at University of Auckland in 2022 under Steven Galbraith. I successfully defended my thesis in December 2025, passing with no revisions required. I love Muay Thai, the national martial art of Thailand. I am undefeated with 9 wins, winning a New Zealand (NZMAF) super-cruiserweight (86kg) title in my last fight. 
+<br> <br>
+I am primarily interested in constructing practical, provably secure authentication protocols; both in the post-quantum (isogeny and code-based) and classical (discrete-log-based) setting. My primary focus in my PhD thesis has been applying modern, succinct generic proof systems (zk-SNARKs) as a building block for efficient post-quantum protocols, such as verifiable random functions, signature schemes and more.
 <h2>My PhD Thesis</h2>
 My PhD thesis, currently submitted for examination is available here: <a href="thesis.pdf"><i>Constructing Secure Protocols from Proofs of Knowledge and Isogenies</i></a>.
 <h2>Publications</h2>
 <ul>
+    <li><a href="https://eprint.iacr.org/2026/364"><i>(Submitted to Crypto '26) SPRINT: New Isogeny Proofs of Knowledge and Isogeny-Based Signatures</i></a> with Thomas Den Hollander, Marzio Mula, Robi Pedersen, Daniel Slamanig and Sebastian Spindler.</li>
     <li><a href="https://eprint.iacr.org/2025/359"><i>A Note on Zero-Knowledge Simulator of the CROSS Identification Protocol</i></a> authored solo.</li>
     <li><a href="https://eprint.iacr.org/2024/1971">(Submitted to Mathematical Cryptology): <i>Further Connections Between Isogenies of Supersingular Curves and Bruhat-Tits Trees</i></a> with Steven Galbraith, Valerie Gilchrist and Ari Markowitz.</li>
-    <li><a href="https://eprint.iacr.org/2024/1626">(Submitted to Crypto 2025): <i>Faster Proofs and VRFs from Isogenies</i></a> with Robi Pedersen.</li>
+    <li><a href="https://eprint.iacr.org/2024/1626">(Asiacrypt 2025): <i>Faster Proofs and VRFs from Isogenies</i></a> with Robi Pedersen.</li>
     <li><a href="https://doi.org/10.62056/a3c39qgxq">(IACR CiC Vol. 1, Issue 4): <i>A Key-Recovery Attack on a Leaky Seasign Variant</i></a> authored solo.</li>
     <li><a href="https://doi.org/10.1007/978-3-031-64381-1_4">(Africacrypt 2024): CDLS: <i>Proving Knowledge of Committed Discrete Logarithms with Soundness</i></a> with Sofia Celi and Joe Rowell during an internship at Brave.</li>
     <li><a href="https://doi.org/10.1007/978-3-031-33491-7_10">(ACNS 2023): <i>Efficient Isogeny Proofs Using Generic Techniques</i></a> with Kelong Cong and Yi-Fu Lai.</li>
@@ -47,5 +76,6 @@ My PhD thesis, currently submitted for examination is available here: <a href="t
     <li>I maintained <a href=https://wider.isoc.org.za/>this website</a>.</li>
 </ul>
 
+ </div>
 </body>
 </html>
